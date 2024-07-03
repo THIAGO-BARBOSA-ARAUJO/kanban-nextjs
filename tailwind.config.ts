@@ -6,12 +6,32 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  mode: "jit",
+
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "16px",
+      },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1310px",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sans: [`var(--font-jakarta)`, "sans-serif"],
+      },
+      colors: {
+        primary: "#21212D",
+        secondary: "#2C2C38",
+        tertiary: "#2C2C38",
+        accent: {
+          DEFAULT: "#645FC6",
+          hover: "#6519c6",
+        },
       },
     },
   },
