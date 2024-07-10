@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { SideNav } from "../components/SideNav/SideNav";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={jakarta.variable}>{children}</body>
+      <body className={jakarta.variable}>
+        <div className=" flex">
+          <SideNav />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

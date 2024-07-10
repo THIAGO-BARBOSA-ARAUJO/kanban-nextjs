@@ -25,7 +25,7 @@ const config: Config = {
         sans: [`var(--font-jakarta)`, "sans-serif"],
       },
       colors: {
-        primary: "#21212D",
+        primary: "#2B2C37",
         secondary: "#2C2C38",
         tertiary: "#2C2C38",
         accent: {
